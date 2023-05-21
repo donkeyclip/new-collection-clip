@@ -1,0 +1,83 @@
+<div class="container">
+<!-- slide 2 -->
+<div class="bg-text">{{initParams.title}}</div>
+
+<!-- slide 1 -->
+  <div class="intro-info">
+  <div class="title">
+    {{initParams.title}}
+  </div>
+  <div class="subtitle">{{initParams.subtitle}}</div>
+</div>
+<div class="image1"></div>
+<div class="image2"></div>
+
+<!-- products-slides -->
+<div class="left-right" mc-for="key,item" mc-of="initParams.products">
+
+
+<div class="product left"  mc-if="key % 2 === 0">
+
+  <div class="product-image2" style="background-image: url({{item.image}});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;"></div>
+  <div class="product-image1" style="background-image: url({{item.image}});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;"></div>
+
+  <div class="product-info-wrapper">
+    <div class="product-name-wrapper">
+      <div class="product-name">{{item.title}}</div>
+    </div>
+    
+    <div class="product-description-wrapper">
+      <div class="product-description">{{item.description}}</div>
+    </div>
+    <div class="price-cta-wrapper">
+      <div class="price">{{item.price}}</div>
+      <a class="cta" href={{item.url}} target="_blank">Buy now</a>
+    </div>
+  
+  </div>
+</div>
+<div class="product right" mc-if="key % 2 === 1 ">
+  <div class="product-image2" style="background-image: url({{item.image}});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;"></div>
+  <div class="product-image1" style="background-image: url({{item.image}});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;"></div>
+
+  <div class="product-info-wrapper">
+    <div class="product-name-wrapper">
+      <div class="product-name">{{item.title}}</div>
+    </div>
+    
+    <div class="product-description-wrapper">
+      <div class="product-description">{{item.description}}</div>
+    </div>
+    <div class="price-cta-wrapper">
+      <div class="price">{{item.price}}</div>
+      <a class="cta" href={{item.url}} target="_blank">Buy now</a>
+    </div>
+  
+  </div>
+</div>
+</div>
+
+<!-- <div class="outro">
+  <div class="image" mc-for="key,item" mc-of="initParams.products" style="background-image: url({{item.image}});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;">
+    <a class="cta" href={{item.url}} target="_blank">Buy now</a>
+  </div>
+</div> -->
+
+</div>
