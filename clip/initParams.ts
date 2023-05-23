@@ -12,8 +12,8 @@ export default [
       products: [
         {
           image:[
-            "assets/pr1.jpg",
-            "assets/pr1-2.jpg",
+            "https://donkeyclip.github.io/new-collection-clip/server/assets/pr1.jpg",
+            "https://donkeyclip.github.io/new-collection-clip/server/assets/pr1-2.jpg",
           ],
           title: "Rainbow Dress",
           description:
@@ -24,8 +24,8 @@ export default [
         },
         {
           image:[
-            "assets/pr2.jpg",
-            "assets/pr2-2.jpg",
+            "https://donkeyclip.github.io/new-collection-clip/server/assets/pr2.jpg",
+            "https://donkeyclip.github.io/new-collection-clip/server/assets/pr2-2.jpg",
           ],
           title: "Rainbow Sunglasses",
           description: 
