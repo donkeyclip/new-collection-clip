@@ -7,6 +7,38 @@ export const itemsCombo = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
+                top:"0"
+            },
+            initialValues: {
+                top:"-100%"
+            },
+          },
+          props: {
+            duration: 1,
+            selector:".left.product"
+          },
+          position: 0,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+                top:"0"
+            },
+            initialValues: {
+                top:"100%"
+            },
+          },
+          props: {
+            duration: 1,
+            selector:".right.product"
+          },
+          position: 0,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
                 top:"13%"
             },
             initialValues: {
@@ -281,6 +313,38 @@ export const itemsCombo = (selector) =>
                 selector:".cta"
               },
               position: 3000,
+            },
+            {
+              incidentClass: CSSEffect,
+              attrs: {
+                animatedAttrs: {
+                    top:"-100%"
+                },
+                initialValues: {
+                  top:"0%"
+                },
+              },
+              props: {
+                duration: 1,
+                selector:".left.product"
+              },
+              position: 3999,
+            },
+            {
+              incidentClass: CSSEffect,
+              attrs: {
+                animatedAttrs: {
+                    top:"100%"
+                },
+                initialValues: {
+                  top:"0%"
+                },
+              },
+              props: {
+                duration: 1,
+                selector:".right.product"
+              },
+              position: 3999,
             },
       ],
     },

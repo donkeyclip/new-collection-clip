@@ -7,6 +7,7 @@ import initParamsValidationRules from "./initParamsValidationRules";
 import { left } from "./effects/left";
 import { opacity } from "./effects/opacity";
 import { itemsCombo } from "./effects/itemsCombo";
+import { outroCombo } from "./effects/outroCombo";
 
 const clip = new HTMLClip({
   html,
@@ -34,10 +35,11 @@ clip.addIncident(top("-100%","0%",".intro-info",800,0,"easeInCirc"),1800);
 clip.addIncident(top("100%","0%",".image1",800,0,"easeInCirc"),1800);
 clip.addIncident(left("-50%","0%",".image2",800,0,"easeInCirc"),1800);
 
-clip.addIncident(opacity(1,0,".bg-text",1),1700);
-clip.addIncident(left("100%","-250%",".bg-text","@expression(3*4000+900+2000)",0),1800);
+clip.addIncident(opacity(0.1,0,".bg-text",1),1700);
+clip.addIncident(left("100%","-250%",".bg-text","@expression(initParams.products.length*4000+900+2000)",0),1800);
 clip.addIncident(itemsCombo(".left-right"),2700);
 
-
+clip.addIncident(outroCombo(".image","@expression(initParams.products.length*4000+300*index)"),2700)
+clip.addIncident(top("0%","-100%",".outro", 1,"@expression(initParams.products.length*4000+300*index)"),2700)
 
 export { clip };

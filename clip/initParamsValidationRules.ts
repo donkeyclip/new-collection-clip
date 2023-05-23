@@ -4,14 +4,23 @@ export default {
   secondaryColor:{ type: "color" },
   fontColor:{ type: "color" },
   title:{ type: "string" },
-  image1:{ type: "string" },
+  collectionName:{ type: "string" },
   products: {
     label: "Products",
     type: "array",
+    min:2,
+    max:3,
     items: {
       type: "object",
       props: {
-        image: { type: "string" },
+        image: { 
+          type: "array",
+          min:2,
+          max:2,
+          items:{
+            type:"string"
+          }
+      },
         title: { type: "string" },
         description: { type: "string" },
         variants: {
