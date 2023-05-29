@@ -30,6 +30,7 @@ const clip = new HTMLClip({
 clip.addIncident(top("0%","-100%",".intro-info",800,0,"easeOutCirc"),0);
 clip.addIncident(top("0%","100%",".image1",800,0,"easeOutCirc"),0);
 clip.addIncident(left("0%","-50%",".image2",800,0,"easeOutCirc"),0);
+clip.addIncident(opacity(1,0,".collection",700,0,"easeOutCirc"),2000);
 
 clip.addIncident(top("-100%","0%",".intro-info",800,0,"easeInCirc"),1800);
 clip.addIncident(top("100%","0%",".image1",800,0,"easeInCirc"),1800);

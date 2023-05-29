@@ -92,23 +92,10 @@ color: var(--fontColor);
   position: absolute;
   right: 40px;
   top: 29px;
-  animation: collection 4s linear infinite;
+  opacity: 0;
 }
 
-@keyframes collection {
-  0% {
-   opacity:   0;
-  }
-  50% {
-   opacity:  1;
-  }
-  100% {
-   opacity:  0;
-  }
-}
 
-/*  
-*/
 
 .product{
   width: 100%;
